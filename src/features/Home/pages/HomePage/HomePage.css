@@ -1,0 +1,10 @@
+.HomePage{
+    height: auto;
+    width: 100%;
+}
+
+@media (max-width:480px){
+    .Number-display{
+        display: none;
+    }
+}

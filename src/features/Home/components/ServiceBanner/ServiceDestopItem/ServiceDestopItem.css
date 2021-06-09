@@ -1,0 +1,37 @@
+.ServiceMobileItem{
+    height: auto;
+    width: 100%;
+    background-color: #1b3452;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 10%;
+    color: #fff;
+    margin-top: -35%;
+    z-index: 1;
+}
+.ServiceMobileItem h1{
+    font-size: 24px;
+}
+.ServiceMobileItem p{
+    text-align: center;
+}
+
+.isCenter{
+    background-color: #214873;
+}
+.boderLeft{
+    border-radius: 8px 0 0 8px;
+}
+.boderRight{
+    border-radius: 0 8px 8px 0;
+}
+
+@media (max-width:1460px){
+    .ServiceMobileItem{
+        padding: 25px 5%;
+    }
+    .ServiceMobileItem h1{
+        font-size: 20px;
+    }
+}

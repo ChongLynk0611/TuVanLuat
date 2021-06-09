@@ -1,0 +1,50 @@
+.ServiceBanner{
+    width: 100vw;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.ServiceDestop{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 20vw;
+    box-sizing: border-box;
+}
+.ServiceMobile{
+    display: none;
+}
+
+@media (max-width:1700px){
+    .ServiceDestop{
+        padding: 0 15vw;
+    }
+}
+
+@media (max-width:1460px){
+    .ServiceDestop{
+        padding: 0 10vw;
+    }
+}
+
+@media (max-width:1025px){
+    .ServiceDestop{
+        padding: 0 3vw;
+    }
+}
+
+@media (max-width:800px){
+    .ServiceMobile{
+        display: flex;
+        flex-direction: column;
+        background-color: #214873;
+        padding: 0;
+        margin: 0;
+    }
+    .ServiceDestop{
+        display: none;
+    }
+}
+
+
+

@@ -1,0 +1,120 @@
+.Banner{
+    width: 100vw;
+    height: 75vh;
+    position: relative;
+}
+.Banner img{
+    width: 100vw;
+    height: 100%;
+}
+.Content{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color:rgb(0,0,0,0.45);
+}
+.textContent{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title-Banner{
+    position: relative;
+    color: #ffffff;
+    line-height: 1.3em;
+    font-size: 40px;
+    font-family: 'Tinos', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+.title-Banner p{
+    text-align: center;
+    margin: 0;
+}
+.subTitleBanner{
+    font-weight: 300;
+}
+.br-banner{
+    display: none;
+}
+
+/*responsive*/
+@media (max-width:1250px){
+    .title-Banner{
+        font-size: 32px;
+    }
+}
+
+@media (max-width:1025px){
+    .title-Banner{
+        font-size: 28px;
+    }
+}
+
+@media (max-width:800px){
+    .Banner{
+        height: 70vh;
+    }
+    .title-Banner{
+        font-size: 24px;
+    }
+}
+
+@media (max-width:768px){
+    .Banner{
+        height: 60vh;
+    }
+    .title-Banner{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:600px){
+    .Banner{
+        height: 70vh;
+    }
+    .title-Banner{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:480px){
+    .Banner{
+        height: 50vh;
+    }
+    .title-Banner{
+        font-size: 13px;
+    }
+}
+
+@media (max-width:360px){
+    .title-Banner{
+        font-size: 12px;
+    }
+    
+}
+@media (max-width:330px){
+    .title-Banner{
+        font-size: 11px;
+    }
+    
+}
+@media (max-width:304px){
+    .title-Banner{
+        font-size: 10px;
+    }
+    
+}
+@media (max-width:290px){
+    .br-banner{
+        display: block;
+    }
+}
