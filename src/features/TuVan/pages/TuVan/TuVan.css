@@ -1,0 +1,11 @@
+.TuVan{
+    height: auto;
+    width: 100%;
+    text-align: center;
+    padding: 0 10%;
+}
+
+.T-DSLuatSu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}

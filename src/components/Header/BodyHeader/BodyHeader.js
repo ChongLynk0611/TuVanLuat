@@ -59,7 +59,7 @@ function BodyHeader(props) {
                 {listLinks.map((link,index) => (<LinkItem href={link.href} text={link.text} key={index} />))}
             </div>
             <a 
-                href="/LienHe"
+                href="/TinNhan"
                 className="btn from-left"
             >Tư vấn</a>
             <div className="MenuMobile">

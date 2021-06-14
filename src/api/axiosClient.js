@@ -11,7 +11,8 @@ const axiosClient = axios.create({
 });
 
 axiosClient.interceptors.request.use(async (config) => {
-    //hanlde tooken...
+    const accessToken = localStorage.getItem('accessToken');
+    config.headers.authorization = accessToken;
     return config;
 });
 

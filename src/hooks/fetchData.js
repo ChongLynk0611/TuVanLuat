@@ -1,24 +1,18 @@
 
-const fetchData = async (apiFunction, setState) => {
+const fetchData = async (apiFunction, setState, callback , params ) => {
     try {
-        const response = await apiFunction();
-        console.log(response);
+        const response = await apiFunction(params);
         setState(response);
+        // console.log(response);
+        if(callback){
+            callback();
+        }
     } catch (error) {
         console.log("failed fetch : ", error);
+        if(callback){
+            callback();
+        }
     }
 }
 
-const fetchDataById = async ( apiFunction, setState, id) => {
-    try {
-        const response = await apiFunction(id);
-        setState(response);
-    } catch (error) {
-        console.log("failed fetch Data: ". error);
-    }
-}
-
-export default {
-    fetchData,
-    fetchDataById
-}
+export default fetchData

@@ -62,4 +62,10 @@
 .L-formSubmit .error{
     color: red;
     font-size: 14px;
+    margin-left: 5px;
+}
+.L-failed{
+    display: flex;
+    align-items: flex-end;
+    margin: 10px 0 5px;
 }
